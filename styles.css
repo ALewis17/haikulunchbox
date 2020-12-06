@@ -2,32 +2,17 @@
 
 body {
     background: #FFF6D1;
-}
-
-footer {
-    position: absolute;
-    top: 95%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#haikuDisplay {
-    font-family: 'Castoro', sans-serif;
-    font-size: 80px;
-    font-weight: 600;
-    line-height: 1em;
-    color: #084A37;
-    text-align: left;
+    margin: 0px;
 }
 
 h2 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
+    font-family: 'Castoro', sans-serif;
+    font-weight: 600;
     font-size: 20px;
     line-height: .5em;
     color: #084A37;
     text-align: left;
-    padding: 20px 30px;
+    padding: 16px 30px;
 }
 
 a {
@@ -44,35 +29,71 @@ button {
     border: none;
     border-radius: 4px;
     margin: 8px;
-
+    box-shadow: 0 8px 20px -5px rgba(4, 36, 6, 0.5);
 }
 
-button:hover, button:active {
+button:hover{
     background-color: #066161;
     cursor: pointer;
     border: none;
 }
 
-.haikuZone {
+a:hover {
+    color: #066161;
+    cursor: pointer;
+}
+
+#haikuDisplay {
+    font-family: 'Castoro', sans-serif;
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 1em;
+    color: #084A37;
+    text-align: left;
     position: absolute;
-    white-space: nowrap;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -70%);
+}
+
+.pageContainer { 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.logo {
+    align-self: flex-start;
+}
+
+.haikuZone {
+    align-self: center;
+    align-content: center;
+    flex-grow: 1;
+    white-space: nowrap;
+    margin: 0px 32px 0px 32px;
+}
+
+.footer {
+    align-self: center;
+    align-items: flex-end;
+    padding-bottom: 24px;
 }
 
 .buttonZone {
-    position: absolute;
-    white-space: nowrap;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: 32px;
+    align-self: center;
 }
 
-input {
-    border: none;
-    outline: none;
-    background-color: transparent;
-    font-family: inherit;
-    font-size: inherit;
-}
+
+/* Screens that are 992px or less*/
+@media screen and (max-width: 992px) {
+    h2 {
+        font-size: 30px;
+    }
+
+    #haikuDisplay {
+        font-size: 60px;
+    }
+  }
+  

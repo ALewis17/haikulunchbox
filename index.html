@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    
+
 <head>
     <script src="https://kit.fontawesome.com/b030ef91fb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
@@ -8,24 +8,31 @@
 </head>
 
 <body onload="javascript:newHaiku()">
+    <div class="pageContainer">
 
-    <h2>Haiku Lunchbox</h2>
-
-    <div class="haikuZone">
-        <div type="text" id="haikuDisplay">
-            <!--Haikus will display here-->
+        <div class="logo">
+            <h2>Haiku Lunchbox</h2>
         </div>
+
+        <div class="haikuZone">
+            <div type="text" id="haikuDisplay">
+                <!--Haikus will display here-->
+            </div>
+        </div>
+
+        <div class="buttonZone">
+            <button onclick="newHaiku()"><i class="fas fa-redo"></i> New Haiku</button>
+            <button onclick="CopyToClipboard('haikuDisplay')"><i class="far fa-copy"></i> Copy</button>
+        </div>
+
+        <div class="footer">
+            <h2><a href="https://www.austinlewis.design/" target="_Blank">Austin Lewis</a> | 2020</h2>
+        </div>
+        
     </div>
-    
-    <div class="buttonZone">
-        <button onclick="newHaiku()"><i class="fas fa-redo"></i> New Haiku</button>
-        <button onclick="CopyToClipboard('haikuDisplay')"><i class="far fa-copy"></i> Copy</button>
-    </div>
-    
+
     <script src="scripts.js"></script>
+
 </body>
-<footer>
-    <h2><a href="https://www.austinlewis.design/" target="_Blank">Austin Lewis</a> | 2020</h2>
-</footer>
 
 </html>
