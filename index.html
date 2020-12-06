@@ -1,41 +1,31 @@
 <!DOCTYPE html>
 <html>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
-
-    body {
-        background: #FFF6D1;
-    }
-
-    h1 {
-        font-family: 'Castoro', Arial, Helvetica, sans-serif;
-        font-size: 6em;
-        line-height: .5em;
-        color: #084A37;
-        text-align: center;
-    }
-
-    .haikuZone {
-  position: absolute;
-  white-space: nowrap;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-}
-</style>
-
+    
 <head>
+    <script src="https://kit.fontawesome.com/b030ef91fb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
     <title>Haiku Lunchbox</title>
 </head>
 
-<body>
-    <div class="haikuZone">
-        <h1>smells of food waft by</h1>
-        <h1>and I am far and away</h1>
-        <h1>be back in thirty</h1>
-    </div>
-</body>
+<body onload="javascript:newHaiku()">
 
-<!--Add an array to pull in multiple haikus-->
+    <h2>Haiku Lunchbox</h2>
+
+    <div class="haikuZone">
+        <div type="text" id="haikuDisplay">
+            <!--Haikus will display here-->
+        </div>
+    </div>
+    
+    <div class="buttonZone">
+        <button onclick="newHaiku()"><i class="fas fa-redo"></i> New Haiku</button>
+        <button onclick="CopyToClipboard('haikuDisplay')"><i class="far fa-copy"></i> Copy</button>
+    </div>
+    
+    <script src="scripts.js"></script>
+</body>
+<footer>
+    <h2><a href="https://www.austinlewis.design/" target="_Blank">Austin Lewis</a> | 2020</h2>
+</footer>
+
 </html>
