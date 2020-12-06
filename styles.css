@@ -95,5 +95,9 @@ a:hover {
     #haikuDisplay {
         font-size: 60px;
     }
+
+    .footer {
+        padding-bottom: 50px;
+    }
   }
   
