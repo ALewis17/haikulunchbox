@@ -47,7 +47,7 @@ a:hover {
     font-family: 'Castoro', sans-serif;
     font-size: 80px;
     font-weight: 600;
-    line-height: 1em;
+    line-height: 1.3em;
     color: #084A37;
     text-align: left;
     position: absolute;
@@ -59,7 +59,7 @@ a:hover {
 .pageContainer { 
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 90vh;
 }
 
 .logo {
